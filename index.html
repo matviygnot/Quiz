@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Всесвіт — тест</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>🌌 Всесвіт</h1>
+        <p>Перевір свої знання про космос!</p>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Обери рівень тесту</h2>
+            <button class="level-btn">Початковий рівень</button>
+            <button class="level-btn">Середній рівень</button>
+            <button class="level-btn">Достатній рівень</button>
+            <button class="level-btn">Високий рівень</button>
+        </section>
+
+        <section id="quiz" hidden>
+            <p id="progress"></p>
+            <h2 id="question"></h2>
+            <div id="answers"></div>
+            <p id="feedback"></p>
+            <button id="next" onclick="nextQuestion()" hidden>Далі</button>
+        </section>
+
+        <section id="result" hidden>
+            <h2>Тест завершено!</h2>
+            <p id="score"></p>
+            <p id="message"></p>
+            <button onclick="location.reload()">Пройти ще раз</button>
+        </section>
+    </main>
+
+    <footer>Навчальний проєкт з інформатики</footer>
+</body>
+</html>
